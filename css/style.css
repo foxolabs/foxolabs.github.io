@@ -39,6 +39,13 @@ body {
   font-size: 16px!important;
 }
 
+/*image responsive tag*/
+
+img {
+  max-width: 100;
+  height: auto;
+}
+
 /* this is to link the div elements*/
 
 .anchor-span {
@@ -111,86 +118,33 @@ color: #FF9100;
 /* ******************************************/
 
 .navbar {
-  font-color: #fff!important;
-}
-
-.header-nav-container {
-  padding: 0px!important;
-}
-.navbar-nav {
-  font-family:"Open Sans", Arial, sans-serif;
-} 
-
-.navbar-nav a {
   color: #fff!important;
+  background-color: transparent;
 }
 
-.navbar-brand {
-	font-weight: bold!important;
-	font-size: 24px;
-	font-color:#fff;
-  color: #fff!important;
-}
+@media only screen and (max-width: 768px) {
+  .navbar {
+  background-color: #212121; }
+ }
 
-.fa-gitlab {
-	color: #1DE9B6;
-}
 
-.navbar-toggler {
-	color: #212121;
-	border: 1px solid #fff!important;
-	padding: 2px;
-  text-align: center!important;
-}
 
-/* Scrolling navbar for the side scroll*/
-.scrolling-navbar {
-  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-  transition: background .5s ease-in-out, padding .5s ease-in-out;
+.top-nav-collapse {
+  background-color: #651FFF
 }
 
 
 @media (min-width: 779px){   	
-.navbar-brand {
-  font-weight: bold!important;
-  font-color:#FFf!important;
-}
 
 .navbar li {
   margin-left : 1em;
   margin-right : 1em;
 }
 
-.top-nav-collapse {
-	background-color: #212121;
-	color: #fff;
-	text-align: center;
-  font-color:#fff!important;
-}
 }
 
-@media only screen and (max-width: 776px) {
-
-.navbar {
-  font-color: #fff!important;
- }
-  .top-nav-collapse {
-  background-color: #212121;
-  color: #fff;
-  text-align: center;
-  font-color:#fff!important;
-}
-
-	
-}
 
 /*sub nav section */
-
-
-#sub-nav-id h6 {
-  //font-weight: bold!important;
-}
 
 @media only screen and (min-width: 776px) 
 {
@@ -204,8 +158,13 @@ color: #FF9100;
 
 @media only screen and (max-width: 776px) 
 {
+
+.sub-nav {
+  padding: 10px;
+}
+
 .sub-nav li {
-  padding: 20px;
+  padding: 5px;
   text-align: center;
 }
 }
@@ -1014,19 +973,22 @@ color: #fff;
 
 
 
+
 /* ******************************************/
 /* foxo insights section  
 /* ******************************************/
 .header-insights {
- background: url("../images/company_header.jpg")no-repeat center center fixed;
+  background: url("../images/insights_header.jpg")no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover; 
             height: 60% ;
 color: #fff;
-}
+  //background: rgba(0, 0, 0, 0.5);
 
+//opalcity: .7;
+}
 
 
 @media (min-width: 778px) {
