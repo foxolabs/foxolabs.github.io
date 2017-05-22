@@ -336,9 +336,14 @@ h5 > a:hover:before {
 /* ******************************************/
 
 .header-index {
-  //min-height: 100%;
+   height: 70%;
+}
+
+.view {
   height: auto;
 }
+
+
 
 .homepage-hero-module {
   border-right: none;
@@ -354,7 +359,7 @@ h5 > a:hover:before {
 
 .video-container .poster,
 .touch .video-container .poster {
-  //display: block !important;
+display: block !important;
 }
 .video-container {
   position: relative;
@@ -411,23 +416,6 @@ h5 > a:hover:before {
 .video-container video.fillWidth {
   width: 100%;
 }
-
-@media (max-width: 777px) {
-
-.video-container video.fillWidth {
-  width: 100%;
-}
-
-}
-
-@media (min-width: 778px) {
-
-.video-container video.fillWidth {
-  width: 70%;
-}
-
-}
-
 
 
 /* ******************************************/
